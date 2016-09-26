@@ -1,0 +1,137 @@
+Intelligent machine proceses all :
+	Decision making
+	Problem solving
+	Pattern recognition
+	Path planning
+	Natural language processing
+	Inferencing
+
+ML - 	Ability to learn without being explictly programmed.
+		Improve performace automatically.
+Autonomous - Self enabled
+Data mining - Uses ML algos to extract data form unstructured data sets.
+
+Clustering - Grouping/Organizing data into clusters
+				- high intra-cluster similarity - belonging of data points to group should be strong.
+				- low inter-cluster similarity - other groups should not have so  amny common features.
+
+
+Degress of supervision:
+	Supervised - Class label is given and clustering has to be done instead of classification. Will allow to frame a new group.
+	Usupervised - No class labels are given, classification is done by machine on it's own.
+	Semi-supervised - Data is halfway clustered. Eg : Reccomendation system
+	Weakly-Supervised - Label is prominent for a set of data. Eg - Review is weak data as No. of people who buy < No of people who review.
+
+Clustering Application:
+	Google Car
+
+Major clustering approaches:
+	Partitioning approach:
+		Constructs various partitions and evaluate by criterion.
+			Eg : k - means, CLARANS
+	Hierarchical approach:
+		Create herarchial decomposition of set of data.
+			Eg : Agglomerative, diana, agnes, BIRCH, ROCK
+	Density based approach:
+		Based on connectivity and density function.
+			Eg : DBSCAN, OPTICS, DenClue
+	Model based approach:
+		Given a data set which will be the best fi for dta point.
+			Eg : GMM (Gausian MM //Google this), COBWEB
+	Spectral clustering approach:
+		Convert data set into weighted graph. Cut graph into subgraph via spectral analysis. Analysis and seperation done on feture that is required.
+		Spectral cuts - multidimensional prespective of clustering.
+		// Google hyperspace and hyperplane.
+			Eg : Normalized-Cuts
+	Clustering ensemble approach:
+		Combine multiple clustering approach.
+		// Facebook student assosiation : Live data from facebook
+		Use ensemble approach to cluster data.
+// Google gartners cycle
+
+Clustering algorithms family
+	Function Regression:
+		Predicting new number on avalability of data.
+			OLSR, Linear, Logistic, MARS, LOESS
+	Instance bassed algorithm:
+		Databse of example data and compare new data.
+			kNN, LVQ, SOM, LWL
+	Bayesian:
+		Explict application of Bayes theorem
+			Naive bayes (NB), Gaussian NB, Multinomial NB, AODE, BBN, BN
+	Decision Tree:
+		Construct model of decesion based on actual values of the attributes
+			CART, ID3, CHAID, Decesion stump, M5
+			Conditional Decesion tree
+				Likelihood value is imp. when taking decesion tree where probability is used instead of values.
+	Clustering algorithms:
+		modeling approaches, centroid based, heirarchial
+			k-means, k-medians, EM, heirarchial clustering
+	Deep learningL
+		Semi supervised
+		Modern update of ANN
+			DBM
+				8 puzzle : T is decided, it is number of moves. Eg : T > 8 then we stop playing.
+			DBN
+			CNN : Google autonomous driverless cars
+				Convolution matrix (Not colinear)
+				Ant no. of coulmns and rows. Many layers (hidden)
+			Stack Auto - Encoders
+				Data coding required for use in the network
+	// Code for 8 puzzle problem
+	Assosiation Rule learning algorithm:
+		Market basket analysis
+			If a person buys product A, he will buy other product B also.
+			Reccomender and Suggester system. Eg: FB : You may know.
+			// No confidence level found here
+		Eg:
+			Apriori algorithm
+			Eclat algorithm
+	Advanced Neural Network:
+		MATLAB - toolbox - neural network
+	Dimensionality reduction algorithms:
+		Exploit inherent structure of data
+			PCS,PCR,PLSR,MDS,Sammon Mapping, LDA,MDA,QDA
+				Principal component analysis : If market is near 2km based on demographic data, I will go to a particular store.
+	Ensemble Algorithms:
+		Model composed of weaker models.
+	Resularization Algorithm:
+		Regularize the error term. Reduce errors.
+	Other models
+		SVM : Said to be 100% accurate.
+Approach to learn ML Algorithms-
+	
+	What is the Standard and abbriviration used for algorithm?
+	What is the Information processing stategy for algorithm?
+	What is the Objective or goal for the algorithm?
+
+	What are the Metaphors and anologies used to describe behavior of algorithm?
+	What is the pseudocode or flowchart description of algo?
+	What is the  heuristic rule of thumb for using algo? NAVY : numberical, kNN : Clustering based on data
+
+	Classes of problem is algo well suited?
+	What are Common benchmark or datasets used to demondtrate this algo? Eg : IRIS dataset - classification
+	What are useful resources for learning more about algo?
+	What are primary references in which algo war first described? Different version of same algo. Identify the base paper first.
+
+Type of data clustering analysis:
+	Categorical - Gender, no value for type.
+	Ordinal 	- Says category with value.
+	Interval 	- Variable is equally spaced. 10^C is not double hot as 5^C.
+	Ratio 		- 4gm is twice is heavy as 2gm
+	Variable and mized types - Others
+Data Sets
+	Related set of data of same nature cmoposed of similar elements
+// UCI machine learning repository.
+// archive.ics.uci.edu/ml/datasets.html
+
+K - MEANS
+
+Education vs Income vs Age
+
+1 1 2 3 4 5 6 7 8 9			//satrt with minimum two values which are different
+A   B
+
+A
+
+B
