@@ -1,0 +1,38 @@
+K-means
+	doesn't have a noise identification mechanism.
+	Outliers are clustered into a cluster
+	Not suitable to discover clusteters with non convex shapes.
+	Terminates on a local minimum. Changing centroid will cause more iteration or formation of different clusters.
+	K-means is a good initiater for clustering.
+K-modes
+	Variation of K-means
+	Use frequency of data to find closeness.
+	More categorical data is available.
+K-medoids
+	Above two are not robust becuase it creates point which are not here in the dataset.
+	Instead of provoking new data points for the mean, we roud off centroid to nearest data point.
+
+Hierarchial Clustering
+	Typical clustering - Seqeuntial
+	Construct nested partition by grouping objects into tree of clusters.
+	Agglomerative
+		Bottom up strategy.
+		Each object is it's own atomic cluster.
+		These are then merged
+	Devesive
+		All are in ine cluster, these are divided and is stoped when we find our cluster.
+Clustering distance measures:
+		a	b	c	d	e
+Feature	1	2	4	5	6
+
+Distance matrix
+	a	b	c	d	e
+a 	0	1	3	4	5
+b 	1	0	2	3	4
+c 	3	2	0	1	2
+d 	4	3	1	0	1
+e 	5	4	2	1	0
+
+Single link - minimum distance between any two points in a given cluster
+Single link = min(dist(d(a,c),d(a,d),d(a,e),d(b,c),d(b,d),d(b,e)))
+			= min(3,4,5,2,3,4) = 2
